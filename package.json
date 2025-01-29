@@ -1,7 +1,12 @@
 {
-  "name": "stoicss-ui",
+  "name": "stoicss",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "ekovegeance",
+    "url": "https://github.com/ekovegeance"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
