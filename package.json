@@ -1,12 +1,19 @@
 {
   "name": "stoicss",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
   "license": "MIT",
   "author": {
     "name": "ekovegeance",
     "url": "https://github.com/ekovegeance"
   },
+  "keywords": [
+    "ui",
+    "utils",
+    "components",
+    "tailwindcss",
+    "react",
+    "stoicss"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -20,6 +27,7 @@
     "next": "14.2.17",
     "react": "^18",
     "react-dom": "^18",
+    "stoicss": "^0.1.1",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7"
   },
