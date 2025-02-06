@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "module": "ESNext",
+      "target": "ESNext",
+      "moduleResolution": "Node",
+      "esModuleInterop": true,
+      "allowJs": true,
+      "noEmit": false,
+      "outDir": "./dist",
+      "resolveJsonModule": true
+    },
+    "include": [
+      "bin/**/*",
+      "src/cli/**/*"
+    ]
+  }  
