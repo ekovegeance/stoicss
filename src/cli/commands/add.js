@@ -9,12 +9,24 @@ export function addComponent(component, type) {
 
   // Specify the destination folder based on component type
   let folderPath;
-  if (type === 'blocks') {
-    folderPath = path.join(__dirname, "../../../components/blocks/");
-  } else if (type === 'skeleton') {
-    folderPath = path.join(__dirname, "../../../components/skeleton/");
-  } else {
-    folderPath = path.join(__dirname, "../../../components/ui/");
+  switch (type) {
+    case 'blocks':
+      folderPath = path.join(__dirname, "../../../components/blocks/");
+      break;
+    case 'skeleton':
+      folderPath = path.join(__dirname, "../../../components/skeleton/");
+      break;
+    case 'stocks':
+      folderPath = path.join(__dirname, "../../../components/stocks/");
+      break;
+    case 'form':
+      folderPath = path.join(__dirname, "../../../components/form/");
+      break;
+    case 'page':
+      folderPath = path.join(__dirname, "../../../components/page/");
+      break
+    default:
+      folderPath = path.join(__dirname, "../../../components/ui/");
   }
 
   // Create the folder if it doesn't exist

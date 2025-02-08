@@ -11,19 +11,35 @@ program
     .version(process.env.npm_package_version);
 
 
-//  Command add with options -b, --blocks
+//  Command add with options
 program
     .command('add <component>')
-    .description('Add a component (like button, card, etc.) to UI, blocks, skeleton.')
-    .option('-b, --blocks', 'Add to blocks')
-    .option('-s, --skeleton', 'Add to skeleton')
+    .description('Add a component [-bl, --blocks] [-sk, --skeleton] [-st, --stocks] [-fo, --form] [-pa, --page]')
+    .option('-bl, --blocks', 'Add to blocks')
+    .option('-sk, --skeleton', 'Add to skeleton')
+    .option('-st, --stocks', 'Add to stocks')
+    .option('-fo, --form', 'Add to ui')
+    .option('-pa, --page', 'Add to page')
     .action((component, options) => {
         let type = 'ui'; // Default type
-        if (options.blocks) {
-            type = 'blocks';
-        } else if (options.skeleton) {
-            type = 'skeleton';
+        switch (true) {
+            case options.blocks:
+                type = 'blocks';
+                break;
+            case options.skeleton:
+                type = 'skeleton';
+                break;
+            case options.stocks:
+                type = 'stocks';
+                break;
+            case options.form:
+                type = 'form';
+                break;
+            case options.page:
+                type = 'page';
+                break;
         }
+
         addComponent(component, type);
     });
 
