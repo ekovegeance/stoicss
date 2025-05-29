@@ -1,5 +1,5 @@
 {
-  "name": "stoicss",
+  "name": "@ekovegeance/stoicss",
   "description": "stoicss/ui. A minimal UI for React with radix and TailwindCSS",
   "version": "0.1.1",
   "license": "MIT",
@@ -15,6 +15,9 @@
     "react",
     "stoicss"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ekovegeance/stoicss"
